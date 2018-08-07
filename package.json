@@ -2,7 +2,7 @@
   "private": false,
   "license": "MIT",
   "name": "react-babylonjs-3d",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "BabylonJS 3D in a declarative way",
   "main": "./dist/react-babylon-3d.js",
   "module": "./src/index.js",
