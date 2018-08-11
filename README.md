@@ -104,23 +104,29 @@ export default App;
 
 ## This package is under development and for now it doesn't offer much... keep reading and find out what it already can do and what it will do...
 
-## implemented
-### components
-- [x] BABYLON.FreeCamera - (name, defaultTarget, inputs, position)
-- [x] BABYLON.HemisphericLight - (name, intensity, target)
-- [x] BABYLON.Mesh.CreateSphere - (name, subdivisions, diameter, position)
-- [x] BABYLON.Mesh.CreateGround- (name, width, height, subdivisions, position, material)
-- [x] BABYLON.MeshBuilder.CreateBox - (name, options, ellipsoid, position, material)
-- [x] BABYLON.Mesh.CreateBox - (name, size, ellipsoid, position, material)
-- [x] BABYLON.Texture - (url)
-- [x] BABYLON.CubeTexture - (url)
-- [x] BABYLON.Scene - (clearColor)
+## compatibility
+- WEBPACK
+- HOT REALOD
 
-### properties(styles)
-- [x] BABYLON.StandardMaterial - (name, backFaceCulling, reflectionTexture, diffuseColor, specularColor)
-- [x] BABYLON.ShaderMaterial - (name, shaderPath, attributes, uniforms, edgeColor, hue, boxSize, width, height, tileTex, textureSampler)
+## components
+- <arcRotateCamera alpha beta radius target position attachControl/>  BABYLON.ArcRotateCamera
+- <freeCamera name defaultTarget target position attachControl/>  BABYLON.FreeCamera
+- <hemisphericLight name intensity target/>  BABYLON.HemisphericLight
+- <box name size width height subdivisions material position/>  BABYLONMesh.CreateBox
+- <cylinder height diameterTop diameterBottom tessellation subdivisions arc sideOrientation sideOrientation faceUV frontUVs backUVs position rotation material/>  BABYLONMeshBuilder.CreateCylinder
+- <extrudeShape shape path scale cap sideOrientation frontUVs backUVs invertUV material/>  BABYLONMeshBuilder.ExtrudeShape
+- <ground name width height subdivisions position material/>  BABYLONMesh.CreateGround
+- <lines points colors color useVertexColor/>  BABYLONMeshBuilder.CreateLines
+- <sphere name diameter infiniteDistance position material/>  BABYLONMesh.CreateSphere
+- <scene clearColor ambientColor/>  BABYLON.Scene
 
-### So far
+## properties(styles)
+- <cubeTexture url coordinatesMode/>  BABYLON.CubeTexture
+- <shaderMaterial name shaderPath attributes uniforms diffuseColor backFaceCulling width height boxSize edgeColor hue tileTex/>  BABYLON.ShaderMaterial
+- <standardMaterial name backFaceCulling diffuseColor specularColor emissiveColor ambientColor reflectionTexture diffuseTexture/>  BABYLON.StandardMaterial
+- <texture url/>  BABYLON.Texture
+
+## So far
 The better way to get started is to clone this [repo](https://github.com/viniciusrmcarneiro/react-babylonjs-3d-example), it's a very simple example. Doing that you could focus on how you can compose your BABYLON components.
 
 You can also have a look at the folder `examples` on this very repo.
@@ -142,20 +148,10 @@ In order make it possible to have react like components this package uses [react
 There are alot of things wating to be implemented. As this project is in it's very early stage, some very simple things are still to be implemented. So far the ROADMAP is:
 - [ ] events hook/actions
 - [ ] unit test for api
-- [ ] increase code coverage
 - [ ] Guideline for contribution
 - [ ] Documentation(always working in progress)
 - [ ] layout(flexbox)
 - [ ] animations
-- [x] eslint
-- [x] React reconciler <https://github.com/facebook/react/pull/10758>
-- [x] refactor to compose all the properties and behaviours
-- [x] set materials and textures as style
-- [x] support for hot reload
-- [x] webpack
-- [x] examples
-- [x] CI travis
-- [x] Coveralls
 
 Don't be shy, if you want to help, just create a pull request.
 

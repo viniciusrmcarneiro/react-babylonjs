@@ -1,7 +1,7 @@
 const path = require("path");
 
 const config = {
-    entry: path.resolve(__dirname, "./dist/index.js"),
+    entry: path.resolve(__dirname, "./src/index.js"),
     mode: "production",
     devtool: "source-map",
     output: {
