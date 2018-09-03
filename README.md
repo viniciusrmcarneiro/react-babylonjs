@@ -174,11 +174,7 @@ The idea is to abstract away all the complexity required to create meshes, scena
 In order make it possible to have react like components this package uses [react-reconciler](https://www.npmjs.com/package/react-reconciler) and implements fiber's interface, pretty cool hein?
 
 
-There are alot of things wating to be implemented. As this project is in it's very early stage, some very simple things are still to be implemented. So far the ROADMAP is:
-- [ ] unit test for api
-- [ ] Guideline for contribution
-- [ ] layout(flexbox)
-- [ ] animations
+There are alot of things wating to be implemented. As this project is in it's very early stage, some very simple things are still to be implemented. So you do need any feature, just open an issue on github.
 
 Don't be shy, if you want to help, just create a pull request.
 
