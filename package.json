@@ -21,12 +21,13 @@
     "verifyConditions": [
       "@semantic-release/changelog",
       "@semantic-release/npm",
-      "@semantic-release/github​"
+      "@semantic-release/git",
+      "@semantic-release/github"
     ],
     "prepare": [
       "@semantic-release/changelog",
       "@semantic-release/npm",
-      "@semantic-release/github​"
+      "@semantic-release/git"
     ]
   },
   "scripts": {
@@ -93,6 +94,8 @@
   },
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.0",
+    "@semantic-release/git": "^7.0.3",
+    "@semantic-release/github": "^5.0.4",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^7.1.5",
